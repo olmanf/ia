@@ -1,25 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modelo Conceptual de la Inteligencia Artificial</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 2em;
-      background-color: #f4f4f4;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      padding: 2em;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #00fff7;
+      text-shadow: 1px 1px 5px #0ff;
     }
     details {
-      margin-bottom: 10px;
-      background: #fff;
-      border: 1px solid #ccc;
-      padding: 10px;
-      border-radius: 8px;
+      margin-bottom: 1.2em;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid #0ff;
+      border-radius: 10px;
+      padding: 1em;
+      backdrop-filter: blur(6px);
     }
     summary {
       font-weight: bold;
+      font-size: 1.2em;
       cursor: pointer;
+      color: #00fff7;
+    }
+    p, li {
+      line-height: 1.6;
+    }
+    ul ul {
+      margin-left: 1em;
+    }
+    h3 {
+      color: #00ffd9;
     }
   </style>
 </head>
@@ -28,102 +48,100 @@
 
   <details open>
     <summary>1. Inteligencia Artificial (IA)</summary>
-    <p>Campo general que busca sistemas con comportamiento inteligente similar al humano.</p>
+    <p>Campo general que busca desarrollar sistemas con comportamiento inteligente similar al humano. La IA integra algoritmos, datos y modelos para resolver problemas complejos.</p>
   </details>
 
   <details>
     <summary>2. Agentes Inteligentes</summary>
+    <p>Un agente inteligente es una entidad capaz de percibir su entorno mediante sensores y actuar sobre él a través de actuadores. Su objetivo es tomar decisiones para maximizar un resultado deseado, adaptándose al entorno en tiempo real.</p>
     <ul>
-      <li>Percepción (sensores)</li>
-      <li>Acción (actuadores)</li>
-      <li>Tipos:
+      <li><strong>Percepción:</strong> recopilación de información del entorno mediante sensores, como cámaras, micrófonos, GPS o sensores de proximidad.</li>
+      <li><strong>Acción:</strong> ejecución de tareas o respuestas en el entorno, como mover un robot, encender una luz o generar una recomendación.</li>
+      <li><strong>Tipos de agentes:</strong>
         <ul>
-          <li>Reactivos simples</li>
-          <li>Con memoria</li>
-          <li>Basados en objetivos</li>
-          <li>Basados en utilidad</li>
+          <li><strong>Reactivos simples:</strong> responden directamente a estímulos sin usar memoria. Ejemplo: termostato que enciende o apaga con base en la temperatura.</li>
+          <li><strong>Con memoria:</strong> almacenan estados pasados para mejorar sus decisiones futuras. Por ejemplo, un robot que recuerda rutas exploradas.</li>
+          <li><strong>Basados en objetivos:</strong> planifican acciones en función de metas específicas. Por ejemplo, un asistente que organiza tareas para cumplir una agenda.</li>
+          <li><strong>Basados en utilidad:</strong> no solo alcanzan metas, sino que eligen entre ellas evaluando cuál proporciona mayor beneficio o satisfacción.</li>
         </ul>
       </li>
     </ul>
+    <p>Los agentes inteligentes son la base de muchos sistemas modernos de IA, desde asistentes virtuales hasta vehículos autónomos.</p>
   </details>
 
   <details>
     <summary>3. Aprendizaje Automático (Machine Learning)</summary>
+    <p>Área de la IA que permite a las máquinas aprender patrones a partir de datos sin ser programadas explícitamente. Se clasifica en:</p>
     <ul>
-      <li>Supervisado: Clasificación, Regresión</li>
-      <li>No supervisado: Clustering, Reducción de dimensionalidad</li>
-      <li>Por refuerzo: Aprendizaje mediante recompensas</li>
-      <li>Modelos comunes:
-        <ul>
-          <li>Árboles de decisión</li>
-          <li>SVM</li>
-          <li>Redes Neuronales</li>
-          <li>k-NN, Naïve Bayes</li>
-        </ul>
-      </li>
+      <li><strong>Aprendizaje supervisado:</strong> utiliza datos etiquetados para entrenar modelos que puedan clasificar o predecir. Ejemplo: diagnóstico médico a partir de síntomas.</li>
+      <li><strong>No supervisado:</strong> descubre estructuras ocultas en datos no etiquetados. Ejemplo: segmentación de clientes por comportamiento de compra.</li>
+      <li><strong>Aprendizaje por refuerzo:</strong> el agente aprende mediante ensayo y error, recibiendo recompensas por acciones exitosas. Usado en robótica y videojuegos.</li>
     </ul>
+    <p>Modelos comunes: árboles de decisión, redes neuronales, máquinas de soporte vectorial (SVM), k-NN, Naïve Bayes.</p>
   </details>
 
   <details>
     <summary>4. Deep Learning (Aprendizaje Profundo)</summary>
+    <p>Subcampo del aprendizaje automático basado en redes neuronales profundas. Se destaca por su capacidad de aprender representaciones jerárquicas directamente de los datos, especialmente en tareas complejas como visión y lenguaje.</p>
     <ul>
-      <li>CNN (Redes Convolucionales)</li>
-      <li>RNN (Redes Recurrentes)</li>
+      <li><strong>CNN (Redes Neuronales Convolucionales):</strong> eficaces en análisis de imágenes.</li>
+      <li><strong>RNN (Redes Neuronales Recurrentes):</strong> diseñadas para procesar secuencias, como texto o audio.</li>
     </ul>
   </details>
 
   <details>
     <summary>5. Procesamiento de Lenguaje Natural (NLP)</summary>
+    <p>Rama de la IA que estudia la interacción entre computadoras y lenguaje humano. Permite a las máquinas entender, interpretar y generar lenguaje natural.</p>
     <ul>
-      <li>Chatbots</li>
-      <li>Traducción automática</li>
-      <li>Análisis de sentimientos</li>
+      <li><strong>Aplicaciones:</strong> asistentes virtuales, traducción automática, análisis de sentimientos, corrección gramatical, generación de texto.</li>
     </ul>
   </details>
 
   <details>
     <summary>6. Visión por Computadora</summary>
+    <p>Disciplina que permite a las máquinas interpretar y comprender imágenes y videos. Utiliza técnicas de IA para extraer información útil de contenido visual.</p>
     <ul>
       <li>Clasificación de imágenes</li>
       <li>Detección de objetos</li>
       <li>Reconocimiento facial</li>
+      <li>Seguimiento de movimiento</li>
     </ul>
   </details>
 
   <details>
     <summary>7. Sistemas Basados en Conocimiento</summary>
+    <p>Sistemas que utilizan bases de conocimiento y motores de inferencia para simular la capacidad de un experto humano en la toma de decisiones.</p>
     <ul>
-      <li>Sistemas expertos</li>
-      <li>Inferencia lógica</li>
+      <li>Sistemas expertos: emulan el juicio de un especialista.</li>
+      <li>Inferencia lógica: aplican reglas lógicas sobre hechos para deducir nueva información.</li>
     </ul>
   </details>
 
   <details>
     <summary>8. Robótica Inteligente</summary>
+    <p>Integración de IA en robots para permitirles percibir su entorno, razonar, tomar decisiones y actuar físicamente en él. Requiere combinar múltiples áreas: visión, lenguaje, control, planeación y aprendizaje.</p>
     <ul>
-      <li>Interacción física con el entorno</li>
-      <li>Combina percepción, planificación y acción</li>
+      <li>Robots móviles, industriales, sociales y autónomos.</li>
+      <li>Aplicaciones en logística, medicina, agricultura, exploración espacial.</li>
     </ul>
   </details>
 
   <details>
     <summary>9. Aprendizaje Federado y Edge AI</summary>
+    <p><strong>Aprendizaje Federado:</strong> es una técnica de entrenamiento colaborativo de modelos de IA en la que los datos permanecen en los dispositivos de origen (por ejemplo, teléfonos móviles, sensores o computadoras personales). En lugar de enviar los datos a un servidor central, cada dispositivo entrena una copia local del modelo y envía solo los parámetros aprendidos (como los pesos de la red neuronal) a un servidor central para ser agregados. Esto mejora la privacidad, reduce los riesgos de fuga de datos y disminuye la necesidad de ancho de banda.</p>
     <ul>
-      <li>Aprendizaje Federado: Entrenamiento descentralizado</li>
-      <li>Edge AI: IA ejecutada localmente en dispositivos</li>
+      <li><strong>Ventajas:</strong> protección de la privacidad, cumplimiento de regulaciones (como GDPR), reducción de latencia y carga en la red.</li>
+      <li><strong>Aplicaciones:</strong> predicción de texto en teclados móviles, diagnóstico médico distribuido, sensores IoT.</li>
+    </ul>
+    <p><strong>Edge AI:</strong> consiste en ejecutar modelos de inteligencia artificial directamente en dispositivos locales, conocidos como dispositivos de borde (edge), como cámaras inteligentes, vehículos autónomos, drones, y sensores industriales. Al procesar los datos localmente, se logra una toma de decisiones más rápida y confiable, sin necesidad de conexión constante a la nube.</p>
+    <ul>
+      <li><strong>Ventajas:</strong> baja latencia, mayor autonomía, funcionamiento en entornos sin conectividad, mayor privacidad.</li>
+      <li><strong>Aplicaciones:</strong> mantenimiento predictivo en fábricas, seguridad en tiempo real, análisis de video en drones, asistentes de voz sin conexión.</li>
     </ul>
   </details>
 
   <details>
     <summary>10. Modelos Generativos y LLMs</summary>
-    <ul>
-      <li>Modelos Generativos: GANs, VAEs</li>
-      <li>LLMs: GPT, BERT, LLaMA</li>
-    </ul>
-  </details>
-
-  <details>
-    <summary>11. ¿Qué son los Modelos Generativos y los LLMs?</summary>
     <h3>🧠 Modelos Generativos</h3>
     <p>Modelos capaces de crear datos nuevos similares a los datos de entrenamiento. Se usan para generar imágenes, texto, audio, etc.</p>
     <ul>
